@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A program who's primary feature is to determine the shortest possible way path to get from one square to another by outputting all the squares the knight will stop on along the way.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
