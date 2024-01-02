@@ -25,12 +25,12 @@ const findIndex = function findSquareIndex(board, square) {
 
 const addEdge = function addEdgeToAdjacencyList(
   board,
-  adjacencyList,
+  edges,
   nextSquare,
 ) {
   const index = findIndex(board, nextSquare);
   if (index) {
-    adjacencyList.push(index);
+    edges.push(index);
   }
 };
 
