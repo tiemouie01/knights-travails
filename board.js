@@ -86,8 +86,17 @@ export default function Board() {
   const getBoard = () => board;
   const getAdjacencyList = () => adjacencyList;
 
+  const equalTo = function checkIfTwoSquaresAreTheSame(
+    firstSquare,
+    secondSquare,
+  ) {
+    return firstSquare.x === secondSquare.x && firstSquare.y === secondSquare.y;
+  };
+
   return {
     getBoard,
     getAdjacencyList,
+    findIndex,
+    equalTo,
   };
 }
