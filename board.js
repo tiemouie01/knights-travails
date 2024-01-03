@@ -1,11 +1,4 @@
-const Square = function squareOnBoard(x, y) {
-  const convert = () => [x, y];
-  return {
-    x,
-    y,
-    convert,
-  };
-};
+import Square from "./square";
 
 const buildBoard = function buildBoardWithSquares() {
   // Create an array of squares.
