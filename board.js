@@ -1,5 +1,10 @@
 const Square = function squareOnBoard(x, y) {
-  return { x, y };
+  const convert = () => [x, y];
+  return {
+    x,
+    y,
+    convert,
+  };
 };
 
 const buildBoard = function buildBoardWithSquares() {
@@ -23,11 +28,7 @@ const findIndex = function findSquareIndex(board, square) {
   return null;
 };
 
-const addEdge = function addEdgeToAdjacencyList(
-  board,
-  edges,
-  nextSquare,
-) {
+const addEdge = function addEdgeToAdjacencyList(board, edges, nextSquare) {
   const index = findIndex(board, nextSquare);
   if (index) {
     edges.push(index);
