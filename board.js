@@ -1,4 +1,5 @@
-import Square from "./square";
+// eslint-disable-next-line import/extensions
+import Square from "./square.js";
 
 const buildBoard = function buildBoardWithSquares() {
   // Create an array of squares.
